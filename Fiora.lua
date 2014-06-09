@@ -113,7 +113,6 @@ function _QKillSteal()
   
 end
 
-
 function OnTick()
 
   if FioraMenu.CarryMe then
@@ -128,4 +127,10 @@ function OnTick()
       _QKillSteal()
   end 
    
+end
+
+function OnDraw()
+
+  DrawCircle(myHero.x, myHero.y, myHero.z, 600, 0xC2743C)
+
 end
